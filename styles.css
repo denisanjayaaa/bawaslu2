@@ -1,0 +1,55 @@
+       /* Add the following CSS for the skeleton loading effect */
+		 .skeleton-loading {
+			animation: loading 1.5s infinite;
+			background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+			background-size: 200% 100%;
+	  }
+
+	  @keyframes loading {
+			to {
+				 background-position: -200% 0;
+			}
+	  } 
+		  body {
+            background-color: #f8f9fa;
+            padding-top: 56px; /* Adjusted for navbar height */
+            padding-bottom: 20px;
+        }
+        .navbar {
+            background-color: brown;
+        }
+        .navbar-text {
+            color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            padding: 80px 0;
+            background-color: #ffffff;
+            color: #824621;
+            position: relative;
+        }
+       
+		  .imgleft {
+			max-width: 100%;
+			height: auto;
+			position: absolute;
+			top: 60px;
+			left: 225px;
+			z-index: 2; /* Set a higher z-index to bring it to the front */
+	  		}
+			.imgright {
+				max-width: 100%;
+				height: auto;
+				position: absolute;
+				top: 80px;
+				left: 980px;
+				z-index: 2; /* Set a higher z-index to bring it to the front */
+				  }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+   

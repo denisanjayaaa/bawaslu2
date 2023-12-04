@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Landing Page</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+            Bawaslu
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+    <img src="assets/WASRA.png" alt="Wasra Image" class="imgleft" width="150px" height="150px">
+    <div class="container">
+        <h1 class="display-2">Selamat Datang!</h1>
+        <p class="lead">Silahkan Masukkan Data</p>
+    </div>
+    <img src="assets/WASRI.png" alt="Wasri Image" class="imgright" width="150px" height="150px">
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <h2 class="mt-4">Input Data CIF</h2>
+    <form id="cifForm" method="POST" action="proses_input.php">
+        <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Jenis Kelamin</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jeniskelamin" id="lakilaki" value="laki-laki">
+                    <label class="form-check-label" for="lakilaki">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jeniskelamin" id="perempuan" value="perempuan">
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="alamat" class="form-label">Alamat</label>
+            <input type="text" class="form-control" id="alamat" name="alamat">
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+        <button type="button" class="btn btn-secondary mt-3" onclick="printPDF()">Print</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2023 Bawaslu. All rights reserved.</p>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function printPDF() {
+        window.print();
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	 <link rel="icon" href="assets/logo.png" type="image/png">
+    <!-- Style untuk warna coklat -->
+    <style>
+        .text-brown {
+            color: #8B4513; /* Warna coklat pada kode warna hex */
+        }
+
+        .images-container {
+            margin-top: 3rem; /* Menambahkan margin-top sebesar 3 rem (sesuaikan sesuai kebutuhan) */
+        }
+		  /* Menentukan warna latar belakang dan teks untuk tombol dengan kelas btn-brown */
+			.btn-brown {
+				background-color: #8B4513; /* Warna coklat pada kode warna hex */
+				color: #fff; /* Warna teks putih agar kontras dengan latar belakang */
+			}
+
+			/* Hover effect untuk tombol dengan kelas btn-brown */
+			.btn-brown:hover {
+				background-color: #654321; /* Warna coklat yang sedikit lebih gelap pada hover */
+			}
+			.col-md-2:first-child {
+				margin-top: 10rem; /* Sesuaikan dengan nilai yang diinginkan */
+			}
+			.col-md-2:last-child {
+				margin-top: 10rem; /* Sesuaikan dengan nilai yang diinginkan */
+			}
+
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center images-container">
+        <!-- Gambar Kiri -->
+        <div class="col-md-2">
+			<div class="first-child">
+            <img src="assets/WASRA.png" alt="Wasra Image" class="img-fluid">
+			</div>
+        </div>
+        
+        <!-- Form Login -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+						<h3 class="text-center text-brown">Selamat Datang Di Halu</h3>
+						<h6 class="text-center text-brown">-Sistem Administrasi Bawaslu-</h6>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-brown">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gambar Kanan -->
+        <div class="col-md-2">
+				<div class="last-child">
+            <img src="assets/WASRI.png" alt="Wasri Image" class="img-fluid">
+				</div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
